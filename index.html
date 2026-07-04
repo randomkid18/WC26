@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- VIEW 1: LOADING SCREEN -->
+    <div id="loading-screen" class="view loading-screen">
+        <div class="loading-content">
+            <div class="trophy-wrap">
+                <svg class="trophy-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="56" stroke="currentColor" stroke-width="3"/>
+                    <path d="M40 45 C40 35 50 30 60 30 C70 30 80 35 80 45 L80 55 C80 70 70 80 60 85 C50 80 40 70 40 55 Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                    <path d="M40 50 L35 50 C30 50 28 55 32 60 C35 65 40 65 42 62" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M80 50 L85 50 C90 50 92 55 88 60 C85 65 80 65 78 62" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="60" y1="85" x2="60" y2="95" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    <rect x="45" y="95" width="30" height="6" rx="3" stroke="currentColor" stroke-width="3"/>
+                    <path d="M55 38 L60 33 L65 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 class="loading-title">World Cup 2026</h1>
+            <p class="loading-subtitle">United States &bull; Canada &bull; Mexico</p>
+            <div class="loading-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIEW 2: ONBOARDING -->
+    <div id="onboarding-view" class="view onboarding-view hidden">
+        <div class="onboarding-slides" id="onboarding-slides">
+            <!-- Slide 1 -->
+            <div class="slide" data-index="0">
+                <div class="slide-visual">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="80" stroke="#1e3a8a" stroke-width="4" opacity="0.2"/>
+                        <circle cx="100" cy="100" r="55" stroke="#1e3a8a" stroke-width="3"/>
+                        <path d="M70 85 C70 70 85 60 100 60 C115 60 130 70 130 85 L130 100 C130 120 115 135 100 140 C85 135 70 120 70 100 Z" stroke="#059669" stroke-width="3" fill="none"/>
+                        <path d="M100 140 L100 155" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+                        <rect x="80" y="155" width="40" height="8" rx="4" stroke="#f59e0b" stroke-width="3"/>
+                    </svg>
+                </div>
+                <h2 class="slide-title">Welcome to World Cup 2026</h2>
+                <p class="slide-desc">Experience the greatest football tournament on earth. Join millions of fans worldwide in celebrating the beautiful game.</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" data-index="1">
+                <div class="slide-visual">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="40" y="60" width="40" height="80" rx="4" stroke="#dc2626" stroke-width="3"/>
+                        <rect x="80" y="40" width="40" height="80" rx="4" stroke="#1e3a8a" stroke-width="3"/>
+                        <rect x="120" y="50" width="40" height="80" rx="4" stroke="#059669" stroke-width="3"/>
+                        <circle cx="60" cy="90" r="8" fill="#dc2626"/>
+                        <circle cx="100" cy="70" r="8" fill="#1e3a8a"/>
+                        <circle cx="140" cy="80" r="8" fill="#059669"/>
+                    </svg>
+                </div>
+                <h2 class="slide-title">48 Nations, 3 Hosts</h2>
+                <p class="slide-desc">For the first time in history, three nations will host the expanded 48-team tournament across North America.</p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" data-index="2">
+                <div class="slide-visual">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 30 L110 70 L150 70 L115 95 L130 135 L100 110 L70 135 L85 95 L50 70 L90 70 Z" stroke="#1e3a8a" stroke-width="3" stroke-linejoin="round"/>
+                        <path d="M60 150 L140 150" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M70 160 L130 160" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h2 class="slide-title">United States</h2>
+                <p class="slide-desc">From Los Angeles to New York, iconic stadiums across America will host the world's best players on the biggest stage.</p>
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide" data-index="3">
+                <div class="slide-visual">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 40 C70 40 50 70 50 100 C50 130 70 150 100 150 C130 150 150 130 150 100 C150 70 130 40 100 40 Z" stroke="#dc2626" stroke-width="3"/>
+                        <path d="M100 50 L100 140" stroke="#dc2626" stroke-width="2"/>
+                        <path d="M50 100 L150 100" stroke="#dc2626" stroke-width="2"/>
+                        <path d="M65 65 L135 135" stroke="#dc2626" stroke-width="2"/>
+                        <path d="M135 65 L65 135" stroke="#dc2626" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h2 class="slide-title">Canada</h2>
+                <p class="slide-desc">Making history with their first-ever World Cup hosting duties, bringing passion from Vancouver to Toronto.</p>
+            </div>
+            <!-- Slide 5 -->
+            <div class="slide" data-index="4">
+                <div class="slide-visual">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="60" stroke="#059669" stroke-width="3"/>
+                        <circle cx="100" cy="100" r="45" stroke="#f59e0b" stroke-width="2"/>
+                        <path d="M100 55 L100 70 M100 130 L100 145 M55 100 L70 100 M130 100 L145 100" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="100" cy="100" r="10" fill="#f59e0b"/>
+                    </svg>
+                </div>
+                <h2 class="slide-title">Mexico</h2>
+                <p class="slide-desc">The legendary football nation returns as a host, bringing Aztec passion and world-class stadium atmosphere.</p>
+            </div>
+            <!-- Slide 6 -->
+            <div class="slide" data-index="5">
+                <div class="slide-visual">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 120 C50 80 80 50 100 50 C120 50 150 80 150 120 C150 140 130 150 100 150 C70 150 50 140 50 120 Z" stroke="#1e3a8a" stroke-width="3"/>
+                        <path d="M100 150 L100 165" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+                        <ellipse cx="100" cy="170" rx="25" ry="6" stroke="#f59e0b" stroke-width="3"/>
+                        <path d="M80 100 L90 90 L100 100 L110 90 L120 100" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h2 class="slide-title">Join the Celebration</h2>
+                <p class="slide-desc">Vote for your champion, chat with global fans, and be part of football history. The journey begins now.</p>
+                <button class="slide-cta-btn" id="onboarding-finish-btn">Get Started</button>
+            </div>
+        </div>
+        <div class="onboarding-dots" id="onboarding-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <!-- VIEW 3: AUTHENTICATION -->
+    <div id="auth-view" class="view auth-view hidden">
+        <div class="auth-header">
+            <div class="auth-logo">
+                <svg width="48" height="48" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="55" stroke="#1e3a8a" stroke-width="3"/>
+                    <path d="M40 45 C40 35 50 30 60 30 C70 30 80 35 80 45 L80 55 C80 70 70 80 60 85 C50 80 40 70 40 55 Z" stroke="#059669" stroke-width="3" fill="none"/>
+                    <path d="M60 85 L60 95" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+                    <rect x="45" y="95" width="30" height="6" rx="3" stroke="#f59e0b" stroke-width="3"/>
+                </svg>
+            </div>
+            <h1 class="auth-title">World Cup 2026</h1>
+            <p class="auth-subtitle">Sign in to join the global community</p>
+        </div>
+
+        <div class="auth-tabs">
+            <button class="auth-tab active" data-tab="signin">Sign In</button>
+            <button class="auth-tab" data-tab="signup">Sign Up</button>
+        </div>
+
+        <!-- Sign In Form -->
+        <form id="signin-form" class="auth-form">
+            <div class="form-group">
+                <label for="si-username">Username</label>
+                <input type="text" id="si-username" placeholder="Enter your username" autocomplete="username" required>
+            </div>
+            <div class="form-group">
+                <label for="si-password">Password</label>
+                <input type="password" id="si-password" placeholder="Enter your password" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="auth-submit-btn" id="si-submit">
+                <span>Sign In</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <p class="auth-error hidden" id="si-error"></p>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form id="signup-form" class="auth-form hidden">
+            <div class="form-group">
+                <label for="su-username">Username</label>
+                <input type="text" id="su-username" placeholder="Choose a username" autocomplete="username" required>
+            </div>
+            <div class="form-group">
+                <label for="su-password">Password</label>
+                <input type="password" id="su-password" placeholder="Create a password" autocomplete="new-password" required>
+            </div>
+            <div class="form-group">
+                <label for="su-confirm">Confirm Password</label>
+                <input type="password" id="su-confirm" placeholder="Confirm your password" autocomplete="new-password" required>
+            </div>
+            <button type="submit" class="auth-submit-btn" id="su-submit">
+                <span>Create Account</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <p class="auth-error hidden" id="su-error"></p>
+        </form>
+    </div>
+
+    <!-- VIEW 4: MAIN DASHBOARD -->
+    <div id="main-dashboard" class="view main-dashboard hidden">
+        <header class="dashboard-header">
+            <div class="header-brand" id="header-brand-trigger">
+                <svg width="28" height="28" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="55" stroke="currentColor" stroke-width="4"/>
+                    <path d="M40 45 C40 35 50 30 60 30 C70 30 80 35 80 45 L80 55 C80 70 70 80 60 85 C50 80 40 70 40 55 Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                    <path d="M60 85 L60 95" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    <rect x="45" y="95" width="30" height="6" rx="3" stroke="currentColor" stroke-width="3"/>
+                </svg>
+                <span class="header-title">World Cup 2026</span>
+            </div>
+            <div class="header-user">
+                <span id="header-username">Guest</span>
+                <button class="header-logout" id="header-logout-btn" title="Sign Out">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- TAB CONTENT: VOTE -->
+        <div class="tab-content" id="tab-vote">
+            <div class="section-header">
+                <h2>Cast Your Vote</h2>
+                <p class="section-desc">One account, one vote. Choose your champion.</p>
+            </div>
+            <div class="vote-status-banner hidden" id="vote-status-banner">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>You voted for <strong id="voted-country">-</strong></span>
+            </div>
+            <div class="countries-list" id="countries-list"></div>
+            <div class="vote-results hidden" id="vote-results">
+                <div class="section-header" style="margin-top:24px;">
+                    <h2>Live Results</h2>
+                    <p class="section-desc">Total votes: <span id="total-votes">0</span></p>
+                </div>
+                <div class="results-list" id="results-list"></div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT: CHAT -->
+        <div class="tab-content hidden" id="tab-chat">
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-mute-banner hidden" id="chat-mute-banner">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    <span>You are muted. Chat access restricted.</span>
+                </div>
+                <div class="chat-input-bar">
+                    <input type="text" id="chat-input" placeholder="Type a message..." maxlength="500" autocomplete="off">
+                    <button class="chat-send-btn" id="chat-send-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </div>
+                <div class="chat-cooldown hidden" id="chat-cooldown">Wait <span id="cooldown-seconds">3</span>s</div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT: INFO -->
+        <div class="tab-content hidden" id="tab-info">
+            <div class="info-hero">
+                <div class="info-hero-icon">
+                    <svg width="64" height="64" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="55" stroke="#1e3a8a" stroke-width="3"/>
+                        <path d="M40 45 C40 35 50 30 60 30 C70 30 80 35 80 45 L80 55 C80 70 70 80 60 85 C50 80 40 70 40 55 Z" stroke="#059669" stroke-width="3" fill="none"/>
+                        <path d="M60 85 L60 95" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+                        <rect x="45" y="95" width="30" height="6" rx="3" stroke="#f59e0b" stroke-width="3"/>
+                    </svg>
+                </div>
+                <h2>FIFA World Cup 2026</h2>
+                <p class="info-sub">United States &bull; Canada &bull; Mexico</p>
+            </div>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-card-icon blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <div class="info-card-body">
+                        <h3>48 Nations</h3>
+                        <p>The expanded format features 48 teams competing across 104 matches for the ultimate prize.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <div class="info-card-body">
+                        <h3>3 Host Countries</h3>
+                        <p>First-ever tri-nation hosting across 16 cities in the United States, Canada, and Mexico.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon gold">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </div>
+                    <div class="info-card-body">
+                        <h3>12 Groups</h3>
+                        <p>Teams are divided into 12 groups of 4, with the top 2 and 8 best third-placed advancing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="credits-section">
+                <p class="credits-label">Creator</p>
+                <p class="credits-name">@r</p>
+                <p class="credits-handle">Yangpentingnamanyadulu (Instagram)</p>
+                <p class="credits-handle">@aescool (YouTube)</p>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT: NOTIFICATIONS -->
+        <div class="tab-content hidden" id="tab-notifications">
+            <div class="section-header">
+                <h2>Notifications</h2>
+                <p class="section-desc">System messages and updates</p>
+            </div>
+            <div class="notifications-list" id="notifications-list">
+                <p class="empty-state">No notifications yet</p>
+            </div>
+        </div>
+
+        <!-- BOTTOM TAB BAR -->
+        <nav class="tab-bar">
+            <button class="tab-bar-item active" data-tab="vote">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <span>Vote</span>
+            </button>
+            <button class="tab-bar-item" data-tab="chat">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span>Chat</span>
+            </button>
+            <button class="tab-bar-item" data-tab="info">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span>Info</span>
+            </button>
+            <button class="tab-bar-item" data-tab="notifications">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                <span>Alerts</span>
+                <span class="tab-badge hidden" id="notif-badge">0</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div class="modal-overlay" id="admin-login-modal">
+        <div class="modal-sheet">
+            <div class="modal-handle"></div>
+            <div class="modal-header">
+                <h2>Admin Access</h2>
+                <button class="modal-close" id="admin-login-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="admin-pin-input">Enter PIN</label>
+                    <input type="password" id="admin-pin-input" placeholder="Enter admin PIN" maxlength="10" autocomplete="off">
+                </div>
+                <p class="auth-error hidden" id="admin-pin-error">Incorrect PIN. Access denied.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="confirm-btn" id="admin-verify-btn">
+                    <span>Unlock Dashboard</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN DASHBOARD -->
+    <div id="admin-dashboard" class="view admin-dashboard hidden">
+        <header class="admin-header">
+            <h1>WC26 Admin Panel</h1>
+            <button class="admin-logout-btn" id="admin-logout-btn">Close</button>
+        </header>
+        <nav class="admin-tabs">
+            <button class="admin-tab active" data-admin-tab="users">Users</button>
+            <button class="admin-tab" data-admin-tab="votes">Votes</button>
+            <button class="admin-tab" data-admin-tab="notify">Notify</button>
+            <button class="admin-tab" data-admin-tab="moderate">Moderate</button>
+        </nav>
+
+        <!-- Users Panel -->
+        <div class="admin-panel" id="admin-panel-users">
+            <div class="admin-section">
+                <h3>Registered Users</h3>
+                <div class="admin-table-wrap">
+                    <table class="admin-table" id="admin-users-table">
+                        <thead><tr><th>Username</th><th>Joined At</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Votes Panel -->
+        <div class="admin-panel hidden" id="admin-panel-votes">
+            <div class="admin-section">
+                <h3>Voting Statistics</h3>
+                <div class="admin-table-wrap">
+                    <table class="admin-table" id="admin-votes-table">
+                        <thead><tr><th>Country</th><th>Votes</th><th>Percentage</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notify Panel -->
+        <div class="admin-panel hidden" id="admin-panel-notify">
+            <div class="admin-section">
+                <h3>Send Notification</h3>
+                <form id="admin-notify-form" class="admin-form">
+                    <div class="form-group">
+                        <label>Target User</label>
+                        <select id="notify-target" class="form-input">
+                            <option value="ALL">All Users (Broadcast)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="notify-message" rows="3" class="form-input" placeholder="Type your notification message..." required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="confirm-btn">Send Notification</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Moderate Panel -->
+        <div class="admin-panel hidden" id="admin-panel-moderate">
+            <div class="admin-section">
+                <h3>Mute User</h3>
+                <form id="admin-mute-form" class="admin-form">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="mute-username" class="form-input" placeholder="Enter username to mute" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Duration (minutes)</label>
+                        <input type="number" id="mute-duration" class="form-input" placeholder="e.g. 30" min="1" max="10080" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="confirm-btn" style="background:var(--wc-red);">Apply Mute</button>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-section">
+                <h3>Currently Muted Users</h3>
+                <div class="admin-table-wrap">
+                    <table class="admin-table" id="admin-muted-table">
+                        <thead><tr><th>Username</th><th>Expires At</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">
+        <span id="toast-message">Message</span>
+    </div>
+
+    <!-- LOADING OVERLAY -->
+    <div class="loading-overlay hidden" id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
